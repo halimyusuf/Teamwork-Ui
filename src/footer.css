@@ -1,0 +1,52 @@
+.footer {
+    border-top: 3px solid rgb(255, 120, 0);
+    /* width: 400px; */
+    background: rgb(50, 50, 255);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 7em;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: rgb(255, 120, 0);
+}
+
+.footer a:hover {
+    color: rgb(255, 100, 0) !important;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.copyrights,
+.footer-body {
+    display: inline;
+}
+
+.copy {
+    color: rgb(255, 120, 0);
+    font-weight: bold;
+}
+
+
+
+.my-info a {
+    font-size: 1.3em;
+}
+
+.my-info .fa {
+    color: rgb(255, 120, 0)
+}
+
+.fa-whatsapp {
+    color: #5afa32;
+}
+
+.danger {
+    color: red;
+    font-weight: 600;
+    display: block;
+}
