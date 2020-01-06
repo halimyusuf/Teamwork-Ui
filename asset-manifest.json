@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/teamwork/static/css/main.f516c05a.chunk.css",
-    "main.js": "/teamwork/static/js/main.3e998845.chunk.js",
-    "main.js.map": "/teamwork/static/js/main.3e998845.chunk.js.map",
-    "runtime-main.js": "/teamwork/static/js/runtime-main.8c9b6c70.js",
-    "runtime-main.js.map": "/teamwork/static/js/runtime-main.8c9b6c70.js.map",
-    "static/css/2.0d0e293b.chunk.css": "/teamwork/static/css/2.0d0e293b.chunk.css",
-    "static/js/2.2d7451f8.chunk.js": "/teamwork/static/js/2.2d7451f8.chunk.js",
-    "static/js/2.2d7451f8.chunk.js.map": "/teamwork/static/js/2.2d7451f8.chunk.js.map",
-    "index.html": "/teamwork/index.html",
-    "precache-manifest.4541001be1dbb36a4e1b72eb60e942c4.js": "/teamwork/precache-manifest.4541001be1dbb36a4e1b72eb60e942c4.js",
-    "service-worker.js": "/teamwork/service-worker.js",
-    "static/css/2.0d0e293b.chunk.css.map": "/teamwork/static/css/2.0d0e293b.chunk.css.map",
-    "static/css/main.f516c05a.chunk.css.map": "/teamwork/static/css/main.f516c05a.chunk.css.map",
-    "static/media/font-awesome.css": "/teamwork/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/Teamwork-Ui/static/css/main.f516c05a.chunk.css",
+    "main.js": "/Teamwork-Ui/static/js/main.3f6ed9a3.chunk.js",
+    "main.js.map": "/Teamwork-Ui/static/js/main.3f6ed9a3.chunk.js.map",
+    "runtime-main.js": "/Teamwork-Ui/static/js/runtime-main.f5238cd0.js",
+    "runtime-main.js.map": "/Teamwork-Ui/static/js/runtime-main.f5238cd0.js.map",
+    "static/css/2.9523d14e.chunk.css": "/Teamwork-Ui/static/css/2.9523d14e.chunk.css",
+    "static/js/2.fddfb764.chunk.js": "/Teamwork-Ui/static/js/2.fddfb764.chunk.js",
+    "static/js/2.fddfb764.chunk.js.map": "/Teamwork-Ui/static/js/2.fddfb764.chunk.js.map",
+    "index.html": "/Teamwork-Ui/index.html",
+    "precache-manifest.3b742f3616c172fb31ccb417ef8c0148.js": "/Teamwork-Ui/precache-manifest.3b742f3616c172fb31ccb417ef8c0148.js",
+    "service-worker.js": "/Teamwork-Ui/service-worker.js",
+    "static/css/2.9523d14e.chunk.css.map": "/Teamwork-Ui/static/css/2.9523d14e.chunk.css.map",
+    "static/css/main.f516c05a.chunk.css.map": "/Teamwork-Ui/static/css/main.f516c05a.chunk.css.map",
+    "static/media/font-awesome.css": "/Teamwork-Ui/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c9b6c70.js",
-    "static/css/2.0d0e293b.chunk.css",
-    "static/js/2.2d7451f8.chunk.js",
+    "static/js/runtime-main.f5238cd0.js",
+    "static/css/2.9523d14e.chunk.css",
+    "static/js/2.fddfb764.chunk.js",
     "static/css/main.f516c05a.chunk.css",
-    "static/js/main.3e998845.chunk.js"
+    "static/js/main.3f6ed9a3.chunk.js"
   ]
 }
