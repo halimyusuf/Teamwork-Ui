@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Route, Redirect } from "react-router-dom";
+import auth from "../services/authServices";
 import { toast } from "react-toastify";
 import CreateBtn from "./createBtn";
 import PostList from "./postList";
@@ -27,6 +29,16 @@ class Home extends Component {
   };
 
   async componentDidMount() {
+    // console.log(auth.getCurrentUser());
+    // if (!auth.getCurrentUser())
+    //   return (
+    //     <Redirect
+    //       to={{
+    //         pathname: "/sign-in",
+    //         state: { from: this.props.location }
+    //       }}
+    //     />
+    //   );
     try {
       const response = await getAllPosts();
       this.setState({
@@ -160,6 +172,10 @@ class Home extends Component {
     const { user } = this.props;
     const { totalCount, posts } = this.renderPosts();
     const isPageSpam = this.props.match.path === "/spam" ? false : true;
+    // if (!user) {
+    //   console.log(this.props);
+    //   this.props.history.replace("sign-in");
+    // }
     return (
       <div className="home-left">
         <CreateBtn></CreateBtn>

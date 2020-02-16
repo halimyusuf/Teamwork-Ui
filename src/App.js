@@ -16,6 +16,7 @@ import "./footer.css";
 import Logout from "./components/logout";
 import { getCurrentUser } from "./services/authServices";
 import NotFound from "./components/notFound";
+import ProtectedRoute from "./components/common/protectedRoute";
 
 class App extends Component {
   state = {};
@@ -36,37 +37,42 @@ class App extends Component {
         <div id="content-wrap">
           <Switch>
             <Route path="/sign-in" component={LoginForm} />
-            <Route path="/logout" exact component={Logout} />
-            <Route
+            <ProtectedRoute path="/logout" exact component={Logout} />
+            <ProtectedRoute
               path="/"
               exact
-              render={props => <Home user={user && user} {...props} />}
+              render={props => <Home user={user} {...props} />}
             />
             {/* delete later */}
             {user && user.isAdmin && (
-              <Route
+              <ProtectedRoute
                 path="/spam"
                 render={props => <Home user={user} {...props} />}
               />
             )}
 
             {user && user.isAdmin && (
-              <Route path="/register" component={SignUpForm} />
+              <ProtectedRoute
+                path="/register"
+                render={props => <SignUpForm user={user} {...props} />}
+              />
             )}
-            {/* </React.Fragment> */}
-            {/* )} */}
-            <Route
+
+            <ProtectedRoute
               path="/:username?/posts"
               render={props => <Home user={user} {...props} />}
             />
-            <Route path="/edit/articles/:id" component={ArticleForm} />
-            <Route path="/article/new" component={ArticleForm} />
-            <Route path="/gif/new" component={GifForm} />
-            <Route
+            <ProtectedRoute
+              path="/edit/articles/:id"
+              render={props => <ArticleForm user={user} {...props} />}
+            />
+            <ProtectedRoute path="/article/new" component={ArticleForm} />
+            <ProtectedRoute path="/gif/new" component={GifForm} />
+            <ProtectedRoute
               path="/article/:id"
               render={props => <ArticleContent user={user} {...props} />}
             />
-            <Route
+            <ProtectedRoute
               path="/gif/:id"
               render={props => <GifContent user={user} {...props} />}
             />

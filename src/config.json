@@ -1,4 +1,4 @@
 {
-    "apiUrl": "http://localhost:4000/api/v1/",
-    "herokuUrl": "https://halim-teamwork.herokuapp.com/api/v1"
+  "apiUrl": "http://localhost:4000/api/v1/",
+  "herokuUrl": "https://halim-teamwork.herokuapp.com/api/v1/"
 }

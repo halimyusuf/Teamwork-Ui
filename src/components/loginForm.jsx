@@ -21,19 +21,21 @@ class LoginForm extends Form {
     } catch (error) {
       const { response: err } = error;
       let errors = { ...this.state.errors };
-      if (err.status === 404 && err.data.error === "Incorrect email") {
-        errors.email = "Incorrect email";
-        return this.setState({
-          errors
-        });
-      } else if (
-        err.status === 400 &&
-        err.data.error === "Incorrect password"
-      ) {
-        errors.password = "Incorrect password";
-        return this.setState({
-          errors
-        });
+      if (err) {
+        if (err.status === 404 && err.data.error === "Incorrect email") {
+          errors.email = "Incorrect email";
+          return this.setState({
+            errors
+          });
+        } else if (
+          err.status === 400 &&
+          err.data.error === "Incorrect password"
+        ) {
+          errors.password = "Incorrect password";
+          return this.setState({
+            errors
+          });
+        }
       }
       toast.error("Unexpected error");
     }
